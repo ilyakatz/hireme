@@ -4,6 +4,14 @@ class JobsController < ApplicationController
     render json: Job.last
   end
 
+  api :POST, "/jobs", "Send a job invitation"
+  #error :code => 401, :desc => "Unauthorized"
+  #error :code => 404, :desc => "Not Found", :meta => {:anything => "you can think of"}
+  param :title, String, desc: "Title of the proposed job"
+  param :email, String, desc: "Email of the person(s) to contact for more info"
+  description "Stop sending old fashioned emails. Start using the new API reality."
+  formats ['json']
+  example " 'title':'Developer Yeloper' "
   def create
     job = Job.new(job_params)
 

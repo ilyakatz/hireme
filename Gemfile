@@ -7,6 +7,7 @@ gem 'rails-api'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'apipie-rails'
 
 group :development do
   gem 'pry'

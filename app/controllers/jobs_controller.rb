@@ -11,7 +11,6 @@ class JobsController < ApplicationController
   param :email, String, desc: "Email of the person(s) to contact for more info", required: true
   description "Stop sending old fashioned emails. Start using the new API reality."
   formats ['json']
-  example " 'title':'Developer Yeloper' "
   def create
     job = Job.new(job_params)
 

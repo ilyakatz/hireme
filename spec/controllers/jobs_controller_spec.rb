@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe JobsController do
 
-  it "should create a job" do
+  it "should create a job", show_in_doc: true do
     post :create, format: :json, title: "Developer", email: "none@none.com"
     assert_response 200
     body_json = JSON.parse(response.body)

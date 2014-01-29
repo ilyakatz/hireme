@@ -11,9 +11,9 @@ describe JobsController do
   end
 
   it "should throw an exception if job could not be created" do
-    lambda {
+    expect {
       post :create, format: :json, job_title: "Wrong"
-    }.should raise_error
+    }.to raise_error
   end
 
   it "should return status if a job cannot be created" do

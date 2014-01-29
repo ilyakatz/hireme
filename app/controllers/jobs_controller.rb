@@ -29,4 +29,5 @@ class JobsController < ApplicationController
   end
 
   #curl -X POST -H "Content-Type: application/json" -d '{"title":"Developer","email":"emploee@company.com"}' http://localhost:3000/jobs
+  #curl -X POST -d 'title=Developer&email=emploee@company.com"' http://localhost:3001/jobs
 end

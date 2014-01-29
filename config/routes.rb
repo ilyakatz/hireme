@@ -5,8 +5,7 @@ Hireme::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'jobs#index'
-  resources :jobs, only: [:index, :create]
-
+  resources :jobs, only: [:index, :create], constraints: { format: 'json' }
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

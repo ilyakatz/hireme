@@ -3,7 +3,7 @@ require 'spec_helper'
 describe JobsController do
 
   it "should create a job" do
-    post :create, format: :json, title: "Developer"
+    post :create, format: :json, title: "Developer", email: "none@none.com"
     assert_response 200
     body_json = JSON.parse(response.body)
     body_json["status"].should eq("submitted")
@@ -11,10 +11,12 @@ describe JobsController do
   end
 
   it "should throw an execption if job could not be created" do
-    post :create, format: :json, job_title: "Wrong"
-    assert_response 200
-    body_json = JSON.parse(response.body)
-    body_json["status"].should eq("failure")
-    body_json["message"].should eq("Invalid parameters")
+    without_apipie_validation {
+      post :create, format: :json, job_title: "Wrong"
+      assert_response 200
+      body_json = JSON.parse(response.body)
+      body_json["status"].should eq("failure")
+      body_json["message"].should eq("Invalid parameters")
+    }
   end
 end

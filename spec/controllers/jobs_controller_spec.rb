@@ -10,7 +10,13 @@ describe JobsController do
     Jobs.last.title.should eq("Developer")
   end
 
-  it "should throw an execption if job could not be created" do
+  it "should throw an exception if job could not be created" do
+    lambda {
+      post :create, format: :json, job_title: "Wrong"
+    }.should raise_error
+  end
+
+  it "should return status if a job cannot be created" do
     without_apipie_validation {
       post :create, format: :json, job_title: "Wrong"
       assert_response 200
@@ -20,3 +26,4 @@ describe JobsController do
     }
   end
 end
+

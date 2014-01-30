@@ -12,9 +12,15 @@ describe JobsController do
     Jobs.last.title.should eq("Developer")
   end
 
-  it "should throw an exception if job could not be created" do
+  it "should throw an exception if job parameters are incorrect" do
     expect {
       post :create, format: :json, job: { job_title: "Wrong" }
+    }.to raise_error
+  end
+
+  it "should throw an exception if job parameter is not sent" do
+    expect {
+      post :create, format: :json, title: "Wrong"
     }.to raise_error
   end
 

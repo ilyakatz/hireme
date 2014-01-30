@@ -7,8 +7,10 @@ class JobsController < ApplicationController
   api :POST, "/jobs", "Send a job invitation"
   #error :code => 401, :desc => "Unauthorized"
   #error :code => 404, :desc => "Not Found", :meta => {:anything => "you can think of"}
-  param :title, String, desc: "Title of the proposed job", required: true
-  param :email, String, desc: "Email of the person(s) to contact for more info", required: true
+  param :job, Hash do
+    param :title, String, desc: "Title of the proposed job", required: true
+    param :email, String, desc: "Email of the person(s) to contact for more info", required: true
+  end
   description "Stop sending old fashioned emails. Start using the new API reality."
   formats ['json']
   def create
@@ -24,9 +26,9 @@ class JobsController < ApplicationController
   private
 
   def job_params
-    params.slice(:title, :email).permit(:title, :email)
+    params.require(:job).permit(:title, :email)
   end
 
-  #curl -X POST -H "Content-Type: application/json" -d '{"title":"Developer","email":"emploee@company.com"}' http://localhost:3000/jobs
+  #curl -X POST -H "Content-Type: application/json" -d '{"job":{"title":"Developer","email":"emploee@company.com"}}' http://localhost:3001/jobs.json
   #curl -X POST -d 'title=Developer&email=emploee@company.com"' http://localhost:3001/jobs
 end

@@ -1,4 +1,145 @@
 --- !omap
+- apipies#index:
+  - !omap
+    - verb: :GET
+    - path: /apipie
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0/jobs/create.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0/jobs/create.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0/jobs/create.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0/jobs/create.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0/jobs/create.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0/jobs/create.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0/jobs/create.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0/jobs/create.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0/jobs.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
+  - !omap
+    - verb: :GET
+    - path: /apipie/1.0/jobs/create.html
+    - versions: []
+    - query: 
+    - request_data: 
+    - response_data: 
+    - code: 200
+    - show_in_doc: 0
+    - recorded: true
 - jobs#create:
   - !omap
     - verb: :POST
@@ -7,8 +148,9 @@
       - '1.0'
     - query: 
     - request_data:
-        title: Developer
-        email: none@none.com
+        job:
+          title: Developer
+          email: none@none.com
     - response_data:
         status: submitted
     - code: '200'

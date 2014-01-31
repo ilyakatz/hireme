@@ -5,6 +5,10 @@ gem 'rails', '4.0.2'
 
 gem 'rails-api'
 
+gem 'thin'
+gem 'rails_12factor' # required for heroku applications
+gem 'foreman'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'apipie-rails'
@@ -16,6 +20,10 @@ end
 
 group :test do
   gem 'rspec-rails'
+end
+
+group :production do
+  gem 'pg'
 end
 
 

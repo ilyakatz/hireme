@@ -10,7 +10,6 @@ gem 'rails_12factor' # required for heroku applications
 gem 'foreman'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 gem 'apipie-rails'
 
 group :development do
@@ -20,6 +19,10 @@ end
 
 group :test do
   gem 'rspec-rails'
+end
+
+group :development, :test do
+  gem 'sqlite3'
 end
 
 group :production do

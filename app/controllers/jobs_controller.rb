@@ -13,6 +13,7 @@ class JobsController < ApplicationController
   end
   description "Stop sending old fashioned emails. Start using the new API reality."
   formats ['json']
+  api_version "v1"
   def create
     job = Job.new(job_params)
 

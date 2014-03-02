@@ -29,14 +29,21 @@ If you think that hiring through an email is no fun, let others know that they c
 
      `forman start`
 
-     Access documentation at http://localhost:5000/doc/api/v1
+      Access documentation at [http://localhost:5000/doc/api/v1](http://localhost:5000/doc/api/v1)
 
   * Out of the box
 
     `rails server`
 
-      Access documentation at http://localhost:3000/doc/api/v1
+      Access documentation at [http://localhost:3000/doc/api/v1](http://localhost:3000/doc/api/v1)
 
 ## Generate example API calls
 
   `APIPIE_RECORD=examples rspec spec`
+
+## Demo
+
+  [http://katzmopolitan.herokuapp.com/doc/api/v1](http://katzmopolitan.herokuapp.com/doc/api/v1)
+
+  Feel free to use to send me offers
+

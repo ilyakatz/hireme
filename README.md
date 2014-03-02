@@ -47,3 +47,16 @@ If you think that hiring through an email is no fun, let others know that they c
 
   Feel free to use to send me offers
 
+# Note on Patches/Pull Requests
+
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests.
+* Commit
+* Send a pull request.
+
+# Copyright
+
+Copyright (c) 2014 Ilya Katz
+See MIT-LICENSE for details.
+

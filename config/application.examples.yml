@@ -1,0 +1,12 @@
+# Add application configuration variables here, as shown below.
+#
+
+# Deliver emails in development environment
+# true or false
+MAIL_DELIVER: true
+
+# For email deliveries, specify SMTP deails
+MAIL_SMTP_USERNAME: "username"
+MAIL_SMTP_PASSWORD: "password"
+MAIL_SMTP_SERVER:  "server"
+MAIL_SMTP_DOMAIN: "domain"

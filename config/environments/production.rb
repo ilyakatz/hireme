@@ -78,3 +78,13 @@ Hireme::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 end
+
+ActionMailer::Base.smtp_settings = {
+  :address        => ENV['MAIL_SMTP_SERVER'],
+  :port           => ENV['MAIL_SMTP_PORT'] || '587',
+  :authentication => ENV['MAIL_SMTP_AUTH'] || :plain,
+  :user_name      => ENV['MAIL_SMTP_USERNAME'],
+  :password       => ENV['MAIL_SMTP_PASSWORD'],
+  :domain         => ENV['MAIL_SMTP_DOMAIN'],
+  :enable_starttls_auto => true
+}

@@ -145,7 +145,7 @@
     - verb: :POST
     - path: /jobs.json
     - versions:
-      - '1.0'
+      - v1
     - query: 
     - request_data:
         job:

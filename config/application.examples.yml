@@ -10,3 +10,7 @@ MAIL_SMTP_USERNAME: "username"
 MAIL_SMTP_PASSWORD: "password"
 MAIL_SMTP_SERVER:  "server"
 MAIL_SMTP_DOMAIN: "domain"
+
+# Who should get an email when someone uses API to send a job offer
+JOB_OFFER_RECIPIENT: "none@none.com"
+

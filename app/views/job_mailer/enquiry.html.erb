@@ -1,0 +1,24 @@
+Congrats! You have a new prospective job inquiry:
+
+<br>
+<br>
+Title: <%= @job.title %>
+<br>
+  <% if @job.phone %>
+    Contact phone: <%= @job.phone %>
+  <br>
+<% end %>
+Contact email: <%= @job.email %>
+<br/>
+<% if @job.description %>
+  Details: <%= @job.description %>
+<br/>
+<% end %>
+
+<br/>
+<br/>
+Sincerely,
+<br/>
+HireMe
+<br/>
+<br/>

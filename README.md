@@ -1,3 +1,5 @@
+![](app/assets/images/handshake.png?raw=true)
+
 # Set up your own hiring API
 
 If you think that hiring through an email is no fun, let others know that they can hire you through an API:

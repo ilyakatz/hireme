@@ -8,6 +8,7 @@ gem 'rails-api'
 gem 'thin'
 gem 'rails_12factor' # required for heroku applications
 gem 'foreman'
+gem 'figaro'
 
 # Use sqlite3 as the database for Active Record
 gem 'apipie-rails'

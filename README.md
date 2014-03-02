@@ -21,6 +21,22 @@ If you think that hiring through an email is no fun, let others know that they c
 
     `rspec spec`
 
+* Start it up
+
+  * Using forman
+
+     `gem install forman`
+
+     `forman start`
+
+     Access documentation at http://localhost:5000/doc/api/v1
+
+  * Out of the box
+
+    `rails server`
+
+      Access documentation at http://localhost:3000/doc/api/v1
+
 ## Generate example API calls
 
   `APIPIE_RECORD=examples rspec spec`

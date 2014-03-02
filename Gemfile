@@ -14,7 +14,7 @@ gem 'apipie-rails'
 
 group :development do
   gem 'pry'
-  gem 'pry-debugger'
+  gem 'pry-rails'
 end
 
 group :test do
